@@ -46,7 +46,7 @@ Rails.application.configure do
       enable_starttls_auto: true,
       user_name: 'andrei.averkin',
       password: 'gsar5248',
-      authentication => :plain,
-      domain => 'swapart.com'
+      authentication: :plain,
+      domain: 'swapart.com'
   }
 end
