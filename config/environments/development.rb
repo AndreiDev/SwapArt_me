@@ -36,6 +36,7 @@ Rails.application.configure do
   # config.action_view.raise_on_missing_translations = true
 
   # Added after installing DEVISE gem
+  # Email
   config.app_domain = 'localhost:3000'
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
