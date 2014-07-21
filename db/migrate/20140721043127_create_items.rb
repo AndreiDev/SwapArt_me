@@ -9,6 +9,7 @@ class CreateItems < ActiveRecord::Migration
       t.integer :width
       t.references :age, index: true
       t.references :state, index: true
+      t.string :image_url
       t.boolean :is_active?, :null => false, :default => true
       t.boolean :is_blocked?, :null => false, :default => false
 

@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 20140721043127) do
     t.integer  "width"
     t.integer  "age_id"
     t.integer  "state_id"
+    t.string   "image_url"
     t.boolean  "is_active?",     default: true,  null: false
     t.boolean  "is_blocked?",    default: false, null: false
     t.datetime "created_at"
