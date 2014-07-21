@@ -1,3 +1,4 @@
 class Tag < ActiveRecord::Base
-  has_many :items
+  has_many :taggings
+  has_many :items, :through => :taggings
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140721043127) do
+ActiveRecord::Schema.define(version: 20140721190810) do
 
   create_table "ages", force: true do |t|
     t.string   "description"
@@ -58,6 +58,13 @@ ActiveRecord::Schema.define(version: 20140721043127) do
 
   create_table "states", force: true do |t|
     t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "taggings", force: true do |t|
+    t.integer  "item_id"
+    t.integer  "tag_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

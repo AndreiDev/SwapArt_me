@@ -40,3 +40,7 @@ Identity.create!([
 Item.create!([
   {user_id: 1,type_id: 3,description: 'a very nice picture',original_price: '300',height: '100',width: '80',age_id: 1,state_id: 2}
 ])
+Tagging.create!([
+    {item_id: 1, tag_id: 3},
+    {item_id: 1, tag_id: 5}
+])
