@@ -61,3 +61,6 @@ Block.create!([
 Want.create!([
     {user_id: 2, item_id: 1, extra_mile?: true}
 ])
+Swap.create!([
+    {user1_id: User.find(1), user2_id: User.find(2), user1_items: '2', user2_items: '3'}
+])
