@@ -2,6 +2,12 @@ class User < ActiveRecord::Base
 
   belongs_to :region
 
+  has_many :blocks
+  has_many :items, :through => :blocks
+
+  has_many :wants
+  has_many :items, :through => :wants
+
   TEMP_EMAIL_PREFIX = 'change@me'
   TEMP_EMAIL_REGEX = /\Achange@me/
 
