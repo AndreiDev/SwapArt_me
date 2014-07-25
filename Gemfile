@@ -42,4 +42,7 @@ gem 'devise'
 gem 'omniauth'
 gem 'omniauth-facebook'
 
+gem 'cancan'
+gem 'rolify'
+
 gem 'seed_dump'
